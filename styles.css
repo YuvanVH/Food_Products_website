@@ -1,0 +1,297 @@
+@font-face {
+  font-family: Font;
+  src: url(Font/Lexend/static/Lexend-Medium.ttf);
+}
+
+body {
+  display: flex;
+  font-family: Font;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Sätt minsta höjd till 100% av visningsfönstret */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: url('/bilder/texture.jpeg');
+  opacity: 0.9;
+}
+
+header {
+  background-color: #a35d56;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0 5px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#titleLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.linksNav {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 20px
+}
+
+#logo {
+  vertical-align: middle;
+  max-height: 60px;
+  border: 3px double #fff;
+  border-radius: 100%;
+}
+
+.navbar #logo:hover {
+  background-color: #fff;
+  transform: rotate(25deg);
+}
+
+.navbar a:hover,
+#titleLink h1:hover,
+.search-container button:hover,
+.back-next-button button:hover,
+.show-all-less-button button:hover,
+#scrollToTopBtn button:hover,
+.exploreLinks a:hover {
+  color: #000;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 10px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 30px;
+  text-shadow: 2px 5px #fff;
+}
+
+h3 {
+
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+/* about us och contact us sidan */
+.containerRegular {
+  text-align: center;
+  width: 60%;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+#whyChoseUsList {
+  text-align: justify;
+  line-height: 50px;
+  padding: 50px;
+  background-color: #f1d7d7;
+  border-radius: 10px;
+}
+
+.containerRegular #logo:hover {
+  transform: rotate(25deg);
+}
+
+#cansPic {
+  width: 100%;
+  vertical-align: middle;
+  max-height: 600px;
+  border: 3px double #fff;
+}
+
+/* about us & contact us sidan ^^ */
+
+/* like Chart sida */
+#likedSearchList {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.container1 {
+  text-align: center;
+  text-shadow: 2px 5px #fff;
+  width: 60%;
+  margin: 20px auto;
+  padding: 140px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  /* ^^ Använd allt tillgängligt utrymme i flexriktning (vertikalt) */
+  background-image: url(/bilder/cans-background.png);
+}
+
+#container2 {
+  display: none;
+  text-align: center;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+#info {
+  display: none;
+}
+
+.container3 {
+  text-align: center;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.homepageAboutText {
+  margin-top: 103px;
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.back-next-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: center;
+}
+
+.show-all-less-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* UR FUNTION */
+#showLessProducts {
+  display: none;
+  margin-top: 20px;
+}
+
+.image-container {
+  display: block;
+  max-width: 200px;
+}
+
+#product-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 3% 0% 10% 0%;
+}
+
+button {
+  background-color: #ba7973;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.homepageAboutText {
+  background-color: #f1d7d7;
+  padding: 5px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: small;
+}
+
+.exploreLinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  width: 100%;
+}
+
+.exploreLinks img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.exploreLinks img:hover {
+  transform: scale(1.05);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+footer {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #a35d56;
+  margin-top: 30px;
+  /* Placera fotern längst ned, för övrig utrymme nedan */
+}
+
+#copyright {
+  color: #fff;
+  text-align: center;
+}
+
+/* Stylar scrolla upp knappen */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  background-color: #ba7973;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 550px) {
+  #whyChoseUsList {
+    text-align: left;
+    line-height: 35px;
+    padding: 30px;
+    background-color: #f1d7d7;
+    border-radius: 10px;
+  }
+}

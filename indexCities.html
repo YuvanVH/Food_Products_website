@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find out where all the food comes from!">
+  <title>WHERE IS MY FOOD?</title>
+  <link href="stylesCities.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <header>
+    <a id="titleLink" alt="title and link to main page" href="index.html">
+      <h1>WHERE IS MY FOOD?</h1>
+    </a>
+    <nav class="navbar">
+      <a class="linksNav" alt="Link to 'About us'" href="aboutUs.html">ABOUT US</a>
+      <a id="titleLink" alt="title and link to main page" href="indexCities.html">
+        <img id="logo" src="/bilder/cities/globeLogo.png" alt="'where is my food' logo image">
+      </a>
+      <a class="linksNav" alt="Contact Us" href="contactUs.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container1">
+      <h2>The world</h2>
+      <h3><strong>UNFORTUNATELY UNDER CONSTRUCTION</strong></h3>
+      <p>We highly recommend exploring our additional entertaining features below, all centered around the fascinating
+        realm of Sweden, dear developers!</p>
+    </div>
+
+    <div class="containerRegular" id="cityContainer">
+      <h2>Here's some population statistics on different cities!</h2>
+      <h3>Want to add another city to the list? Feel free to do so!</h3>
+      <!-- Lägg till en ny sökbar ruta för den nya staden -->
+      <div class="search-container">
+        <input type="text" id="newCityInput" placeholder="Enter the new city name">
+        <button id="addNewCityButton">Add New City</button>
+      </div>
+      <!-- Här kommer stadslistan att visas -->
+      <div id="cityList">
+      </div>
+    </div>
+
+
+    <section class="container3">
+      <div class="homepageAboutText">
+        <h2>Exploring Products Worldwide</h2>
+        <p>Welcome to "Where is my food?"</p>
+        <p>Our platform is designed to help you explore products from around the world. While we aren't detectives, we
+          have extensive connections globally to provide you with precise information about what you're consuming!
+        </p>
+
+        <p>Within our website, you can uncover details about various ingredients and their mysteries. From enigmatic E
+          numbers to the often overlooked fine print on packaging. It's like delving into a secret society of
+          products!</p>
+        <p>Although our focus is on revealing product insights, our versatile structure allows you to explore other
+          interesting content as well.</p>
+      </div>
+    </section>
+
+    <section class="containerRegular">
+      <h2>Exlore our Websites:</h2>
+      <div class="exploreLinks">
+        <a href="index.html">WHAT AM I EATING? <img src="/bilder/What am i eating pic.png"
+            alt="picture to the website"></a>
+        <a href="indexCities.html"> WHERE IS MY FOOD? <img src="/bilder/cities/Where is my food pic.png"
+            alt="picture to the website"></a>
+      </div>
+    </section>
+  </main>
+
+  <div>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to TOP</button>
+  </div>
+
+  <footer>
+    <p id="copyright">Copyright © 2023</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="cities.js"></script>
+</body>
+
+</html>

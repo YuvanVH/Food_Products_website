@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Like Chart - WHAT AM I EATING?</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <a id="titleLink" alt="title and link to main page" href="index.html">
+      <h1>WHAT AM I EATING?</h1>
+    </a>
+    <nav class="navbar">
+      <a class="linksNav" alt="Link to 'About us'" href="aboutUs.html">ABOUT US</a>
+      <a id="titleLink" alt="title and link to main page" href="index.html">
+        <img id="logo" src="/bilder/canLogo.png" alt="'what am i eating' logo image">
+      </a>
+      <a class="linksNav" alt="Contact Us" href="contactUs.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="containerRegular">
+      <h2>Liked Searches</h2>
+      <ul id="likedSearchList"></ul>
+    </div>
+
+    <div class="containerRegular">
+      <h2>Liked Categories</h2>
+      <ul id="likedCategoriesList"></ul>
+      <canvas id="likeChart" width="400" height="400"></canvas>
+    </div>
+
+    <section class="containerRegular">
+      <div class="exploreLinks">
+        <a href="indexCities.html"> WHERE IS MY FOOD? <img src="/bilder/cities/Where is my food pic.png"
+            alt="picture to the website"></a>
+        <a href="index.html">WHAT AM I EATING? <img src="/bilder/What am i eating pic.png"
+            alt="picture to the website"></a>
+      </div>
+    </section>
+
+  </main>
+
+  <div>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to TOP</button>
+  </div>
+
+  <footer>
+    <p id="copyright">Copyright © 2023</p>
+  </footer>
+  <script src="likeChart.js"></script>
+</body>
+
+</html>

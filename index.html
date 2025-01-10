@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHAT AM I EATING?</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <header>
+    <a id="titleLink" alt="title and link to main page" href="index.html">
+      <h1>WHAT AM I EATING?</h1>
+    </a>
+    <nav class="navbar">
+      <a class="linksNav" alt="Link to 'About us'" href="aboutUs.html">ABOUT US</a>
+      <a id="titleLink" alt="title and link to main page" href="index.html">
+        <img id="logo" src="/bilder/canLogo.png" alt="'what am i eating' logo image">
+      </a>
+      <a class="linksNav" alt="Contact Us" href="contactUs.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container1">
+
+      <h2>Search For Product</h2>
+      <div class="search-container">
+        <label for="search">Enter the name of the product you want to search for:</label>
+        <input type="text" id="search" placeholder="Please enter product name...">
+        <button id="search-button">Search</button>
+      </div>
+    </div>
+    <!-- Gömmer info om produkt ef sökning-->
+    <div id="container2">
+      <div id="showAllInfo">
+
+
+        <div id="info">
+          <h3>Product Information</h3>
+          <div id="product-info">
+
+            <!-- bläddra genom 10 väderna/produkterna  -->
+            <div class="back-next-button">
+              <button id="back-button">Back</button>
+              <span id="page-info"></span>
+              <button id="next-button">Next</button>
+            </div>
+            <div class="show-all-less-button">
+              <button id="showAllProducts">Show all</button>
+              <button id="showLessButton" style="display: none;"><a href="likeChart.html">Go to Like Chart</a></button>
+            </div>
+
+            <p><strong>Product Name:</strong> <span id="product-name"></span></p>
+            <div class="image-container"></div>
+            <p>
+              <strong>Product Image:</strong>
+            </p>
+            <!-- bild på produkt -->
+            <img id="product-image" src="https://world.openfoodfacts.org/api/v2/product/search_terms=${searchTerm}.json"
+              alt="No image uploaded">
+          </div>
+
+          <p><strong>Ingredients:</strong> <span id="product-ingredients"></span></p>
+          <p><strong>Category:</strong> <span id="categories"></span></p>
+          <button id="likeSearchButton">Like Search</button>
+          <!-- knapp för att gå till likeChart.html -->
+          <button id="goToLikeChartButton">Go to Like Chart</button>
+
+        </div>
+      </div>
+    </div>
+
+    <section class="container3">
+      <div class="homepageAboutText">
+        <h2>About This Website</h2>
+        <p>Welcome to "What Am I Eating?"</p>
+        <p> Your friend to discover what's hiding behind the products! We're not detectives, but we have many
+          connections from all over the world to fetch you the exact infomation on what you're putting in your belly!
+        </p>
+
+        <p>On our website, you'll discover a bunch of sneaky ingredients and their secrets. From mysterious E numbers
+          to
+          the
+          tiny printed letters that no one bothers to read. Is it a secret society?</p>
+        <p>We'll help you uncover it!</p>
+      </div>
+    </section>
+
+    <section class="containerRegular">
+      <h2>Explore our Websites:</h2>
+      <div class="exploreLinks">
+        <a href="indexCities.html"> WHERE IS MY FOOD? <img src="/bilder/cities/Where is my food pic.png"
+            alt="picture to the website"></a>
+        <a href="index.html">WHAT AM I EATING? <img src="/bilder/What am i eating pic.png"
+            alt="picture to the website"></a>
+      </div>
+    </section>
+
+  </main>
+
+  <div>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to TOP</button>
+  </div>
+  <footer>
+
+    <p id="copyright">Copyright © 2023</p>
+  </footer>
+  <!-- Script -->
+  <script src="index.js"></script>
+</body>
+
+</html>
