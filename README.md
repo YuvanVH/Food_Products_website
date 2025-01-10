@@ -92,4 +92,26 @@ Koden ska lämnas in senast på söndag den 19 november (23:59).
 Projektet behöver inte (men får) publiceras.
 
 ### Ett tillräckligt stort bidrag måste göras. Insatsen kommer att bedömas utifrån att projektet pågår i ungefär tre veckor. VG kräver en större insats än G.
-# Food_Products_website
+Food_Products_website
+---
+## Features:
+
+    Product search functionality fetching data from APIs.
+    Integration with a second page, "Where Is My Food?", for city population details.
+    A "Like Chart" to save searched items (with room for improvement!).
+    Use of fetch() for API calls and JavaScript for event handling and DOM updates.
+
+## Challenges:
+
+    "Show less" button functionality not working (yet!).
+    Learning curve for JavaScript's asynchronous features and debugging errors.
+    Styling and interactivity issues typical of early projects.
+
+## Technology Stack:
+HTML, CSS, JavaScript (vanilla).
+
+## Takeaways:
+
+    First hands-on experience with JavaScript beyond static HTML/CSS.
+    Understanding the fundamentals of API integration and dynamic content rendering.
+    Highlighting growth and the willingness to experiment, learn, and improve.
